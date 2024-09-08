@@ -180,7 +180,7 @@ body {
 
 .align-paragraph{
   margin-top: 20px;
-  margin: 20px -300px;
+  margin: 20px -3020px;
 }
 
 .section-heading h2 {
@@ -708,15 +708,18 @@ BANNER
 }
  
 .welcome{
-  font-size: 50;
+  font-size: 50%;
   margin-bottom: -25px;
   text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
 }
 
 .tagline{
+  
   text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
 }
 
+
+  
 
 /*
 ---------------------------------------------

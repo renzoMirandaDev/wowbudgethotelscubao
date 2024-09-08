@@ -58,6 +58,12 @@
                         <h6 style="color: #ffffff; font-size:33px; margin-top: -20px; margin-bottom: 20px; margin-left: 40px;">Select number of <span style="color: #9A3324;">Guest</span></h6>
                         <form id="contact" action="" method="post">
                             <div class="row">
+                                <div class="col-md-12 col-sm-12"> 
+                                    <fieldset>
+                                        <label for="post" class="form-label">ROOM TYPE</label>
+                                        <input name="room-type" type="text" id="room-type" readonly>
+                                    </fieldset>
+                                </div>
                                 <div class="col-md-6 col-sm-12"> 
                                     <fieldset>
                                         <label for="post" class="form-label">ADULT</label>
@@ -106,6 +112,10 @@
     
     <!-- Global Init -->
     <script src="../js/custom.js"></script>
-
+    
+    <script>
+       const roomType = (new URL(location.href)).searchParams.get('room')
+       $('form input[name="room-type"]').val(roomType);
+    </script>
   </body>
 </html>
